@@ -1,17 +1,17 @@
 class Check{
-    int [] numbers=new int [5];
+    int [] n=new int [5];
     Scanner in=new Scanner(System.in);
     boolean b=true;
     int temp=-1;
 
     void show(){
         System.out.println("Write five numbers");
-        for(int i=0;i<numbers.length;i++){
+        for(int i=0;i<n.length;i++){
         numbers[i]=in.nextInt();
     }
 
     System.out.print("\nNumbers that are repeated: ");
-    for(int i=0;i<numbers.length;i++){
+    for(int i=0;i<n.length;i++){
 
         if(!b)
         {
@@ -19,12 +19,12 @@ class Check{
         }
 
         b=true;
-        temp=numbers[i];
-        for(int j=0;j<numbers.length;j++){
-            if(i!=j&&temp==numbers[j]&&numbers[j]!=-2)
+        temp=n[i];
+        for(int j=0;j<n.length;j++){
+            if(i!=j&&temp==n[j]&&n[j]!=-2)
             {
                 b=false;
-                numbers[j]=-2;
+                n[j]=-2;
             }
         }
     }
