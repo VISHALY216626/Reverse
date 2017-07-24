@@ -8,7 +8,7 @@ Scanner s=new Scanner(System.in);
 System.out.println("Enter any num: ");
 n=s.nextInt();
 b=n;
-while(n>0)
+while(n!=0)
 {
 a=n%10;
 n=n/10;
