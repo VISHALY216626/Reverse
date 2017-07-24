@@ -3,7 +3,7 @@ class Armstrong{
     int c=0,a,temp;  
     int n=153;
     temp=n;  
-    while(n>0)  
+    while(n!=0)  
     {  
     a=n%10;  
     n=n/10;  
