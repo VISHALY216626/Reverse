@@ -37,7 +37,7 @@ public class Average{
                 System.out.println("Solution found!");
                 printSolution(list, index);
             }
-            backtrack(list, i + 1, index);
+            backtrack(list,i+1,index);
             index.remove(i);
         }
     }
